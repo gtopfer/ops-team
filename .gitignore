@@ -1,0 +1,56 @@
+# =============================================================================
+# ops-team — .gitignore
+# =============================================================================
+# Nenhum arquivo de credencial, chave ou dump de API pode ser versionado.
+# O .env.example é a ÚNICA fonte commitável de estrutura; valores reais
+# vivem só em .env (ignorado) ou em secret manager do humano.
+# =============================================================================
+
+# Credenciais locais
+.env
+.env.*
+!.env.example
+*.env
+*.env.local
+
+# Chaves e certificados
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+id_rsa
+id_ed25519
+id_ecdsa
+*_rsa
+*_ed25519
+*_ecdsa
+
+# Configs de cloud / orquestradores com token embutido
+kubeconfig
+.kube/config
+credentials
+config.json
+sa-*.json
+service-account*.json
+
+# Dumps e capturas que podem conter PII / segredo
+output/api-calls/
+output/dumps/
+output/captures/
+*.pcap
+*.pcapng
+
+# Logs
+*.log
+
+# Claude Code — settings locais da máquina
+.claude/settings.local.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
