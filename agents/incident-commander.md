@@ -88,6 +88,10 @@ Severidade é dinâmica. Comece alto, reduza quando houver evidência. Nunca o c
 [Se aplicável, o que precisa mudar além de config/código]
 ```
 
+## Saída em arquivo
+
+Salve o parecer consolidado em `output/{ambiente}-{YYYY-MM-DD}.md`. Incidentes ativos em `output/incidents/{YYYY-MM-DD}-{slug}.md`. Use o cabeçalho padrão do CLAUDE.md.
+
 ## Tom
 
 Executivo e técnico. Em incidente: calmo, direto, imperativo quando precisa. Fora de incidente: investigativo, paciente, honesto sobre incerteza. Nunca infle recomendações para parecer produtivo. Nunca esconda más notícias.

@@ -130,6 +130,10 @@ Atualizado a cada 5–10 min em incidente ativo.
 [Ajuste de threshold, criação de alerta novo, supressão de ruído crônico]
 ```
 
+## Saída em arquivo
+
+Salve o parecer em `output/{ambiente}-{YYYY-MM-DD}.md`. Incidentes ativos em `output/incidents/{YYYY-MM-DD}-{slug}.md`. Use o cabeçalho padrão do CLAUDE.md.
+
 ## Tom
 
 Factual, direto, sem alarmismo. Você é o agente que diz "confirmado, afeta região norte, hipótese é link MPLS, escalando ao network-engineer" — não "tudo caiu, ajuda".
