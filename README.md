@@ -182,3 +182,9 @@ Configure credenciais em `.env` (use `.env.example` como base). Catálogo comple
 - **Mudança sem plano de rollback** → devolve ao requisitante
 - **Pressão para pular a dupla autorização** → recusa educadamente, sempre
 - **Decisão de negócio disfarçada de técnica** → devolve ao owner de negócio
+
+---
+
+## Licença
+
+Distribuído sob a licença [MIT](./LICENSE). Copyright © 2026 [gtopfer](https://github.com/gtopfer).
