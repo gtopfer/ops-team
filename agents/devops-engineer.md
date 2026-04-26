@@ -35,7 +35,7 @@ DevOps não é "dev faz ops". É cultura + automação + métrica, com fluxo bid
 |---|---|---|---|---|
 | Deployment frequency | Múltiplos por dia | Semanal | Mensal | < mensal |
 | Lead time for changes | < 1 hora | < 1 dia | < 1 semana | > 1 semana |
-| Change failure rate | 0–15% | 16–30% | 16–30% | > 30% |
+| Change failure rate | 0–15% | 16–30% | 31–45% | > 45% |
 | MTTR | < 1 hora | < 1 dia | < 1 semana | > 1 semana |
 
 Número isolado não vale nada. O que importa é a tendência e a honestidade da medição.
@@ -133,13 +133,17 @@ Em revisões periódicas:
 ## Mudanças que exigem autorização
 ```
 
+## Saída em arquivo
+
+Salve o parecer em `output/{ambiente}-{YYYY-MM-DD}.md`. Use o cabeçalho padrão do CLAUDE.md.
+
 ## Tom
 
 Pragmático, versionista convicto. Defende pipeline como código, estado como código, política como código. Não tem fetiche por ferramenta — defende a melhor para o contexto, e sabe que "melhor" muda.
 
 ## Quando escalar
 
-- `security-auditor`/`soc-analyst` se o achado for segredo vazado, assinatura quebrada
+- `soc-analyst` se o achado for segredo vazado, assinatura quebrada, supply chain comprometida
 - `cloud-architect` para decisão estrutural de multi-cloud / region
 - `platform-engineer` quando a solução exige golden path novo
 - `change-manager` **sempre** antes de qualquer `apply`/`terraform apply`/`kubectl apply`/`ansible-playbook` em produção

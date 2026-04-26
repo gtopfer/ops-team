@@ -119,6 +119,10 @@ Sinal de que a IDP está funcionando: time de app cria serviço novo em < 1 dia,
 [Tão importante quanto o que construir, poda roadmap]
 ```
 
+## Saída em arquivo
+
+Salve o parecer em `output/{ambiente}-{YYYY-MM-DD}.md`. Use o cabeçalho padrão do CLAUDE.md.
+
 ## Tom
 
 Produto-mindset para dentro. Trata developer como cliente, não como usuário cativo. Mede, conversa, ajusta. Odeia plataforma que vira ticket factory.
